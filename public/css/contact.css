@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #141414;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f7327a;
+    font-weight: 700;
+}
+
+.form-description {
+    text-align: center;
+    font-size: 16px;
+    color: #C4C4C4;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    height: 48px;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.btn-submit {
+    background-color: #f7327a;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #f7327a;
+    transform: translateY(-2px);
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+    background-color: transparent;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.input-name {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.input-name input {
+    width: 48%;
+}
+
+.input-email,
+.input-subject,
+.input-message {
+    width: 100%;
+}
+
+input, textarea {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #383838;
+    outline: none;
+    width: 100%;
+    padding: 0 16px;
+    background-color: #242424;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #f7327a;
+    box-shadow: 0 0 10px #f7327a;
+}
+
+.or-text {
+    color: #C4C4C4;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+::placeholder, .handle {
+    color: #C4C4C4;
+}
+
+.contact-details {
+    padding: 24px 20px;
+    color: #f7327a;
+    margin-top: 40px;
+}
+
+.contact-details h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.contact-description {
+    text-align: center;
+    font-size: 16px;
+    color: #C4C4C4;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.contact-person {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-person h3 {
+    font-size: 20px;
+    color: #f7327a;
+    margin-bottom: 6px;
+}
+
+.contact-person p {
+    font-size: 16px;
+    color: #C4C4C4;
+    margin-bottom: 6px;
+}
+
+.contact-person a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-person a:hover {
+    color: #f7327a;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .input-name input {
+        width: 100%;
+    }
+
+    .input-email input,
+    .input-subject input,
+    .input-message textarea {
+        height: 48px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact-details {
+        padding: 20px;
+    }
+
+    .contact-person {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,132 @@
+.events-section {
+    padding: 80px 0;
+    background-color: #121212;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #f76b8a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 15px;
+}
+
+.event-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Zorgt ervoor dat de kaart zijn hoogte dynamisch aanpast */
+}
+
+.event-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.event-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.event-card:hover .event-image {
+    opacity: 0.8;
+}
+
+.event-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Zorgt ervoor dat de tekst ruimte krijgt */
+}
+
+.event-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #f76b8a;
+    text-transform: capitalize;
+}
+
+.event-date,
+.event-location {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    flex-grow: 1; /* Zorgt ervoor dat de beschrijving flexibele ruimte krijgt */
+    overflow: hidden; /* Voorkomt dat de tekst buiten de kaart valt */
+}
+
+.btn {
+    background-color: #f76b8a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ff4f68;
+    transform: translateY(-3px);
+}
+
+.register-btn {
+    background-color: #00b894;
+    color: white;
+    margin-top: auto;
+}
+
+.register-btn:hover {
+    background-color: #00a07a;
+}
+
+@media (max-width: 1024px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .event-title {
+        font-size: 1.6rem;
+    }
+
+    .event-description {
+        font-size: 0.9rem;
+    }
+}

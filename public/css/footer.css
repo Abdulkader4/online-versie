@@ -1,0 +1,126 @@
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 3px 0; /* Reduced padding to make the footer smaller */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 12px; /* Vergroot de ruimte tussen de links */
+    font-size: 15px; /* Verhoog de fontgrootte voor grotere links */
+    transition: color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-logo {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 75px; /* Zet de logo lager door een marge bovenaan toe te voegen */
+    margin-left: 40px; /* Verplaats de logo naar rechts door een marge aan de linkerzijde toe te voegen */
+}
+
+.footer-logo-img {
+    max-width: 90px; /* Zorg ervoor dat de logo klein blijft */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.footer-logo-img:hover {
+    transform: scale(1.05);
+}
+
+.footer-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Voeg marge toe om het naar beneden te verschuiven */
+}
+
+
+.nav__social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px; /* Reduced social media icon size */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav__social-link:hover {
+    color: #f7327a;
+    transform: scale(1.2);
+}
+
+.footer-contact h3 {
+    font-size: 18px; /* Reduced size for contact heading */
+    margin-bottom: 8px;
+    color: #f7327a;
+}
+
+.footer-contact p {
+    margin: 4px 0; /* Reduced margin for contact info */
+    font-size: 14px; /* Reduced font size for contact info */
+}
+
+.footer-contact {
+    margin-top: 5px; /* Voeg marge toe om het naar beneden te verschuiven */
+    font-size: 14px; /* Zorg ervoor dat de tekstgrootte consistent blijft */
+}
+
+.footer-extra-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduced gap between extra links */
+    margin-top: 20px; /* Reduced margin above extra links */
+}
+
+.footer-extra-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px; /* Reduced font size for extra links */
+    transition: color 0.3s;
+}
+
+.footer-extra-links a:hover {
+    color: #f7327a;
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Reduced space above footer bottom */
+    font-size: 12px; /* Smaller font size for footer bottom */
+    text-align: center;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

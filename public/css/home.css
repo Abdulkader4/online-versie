@@ -1,0 +1,308 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #2c2c2c;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    object-position: center;
+    filter: brightness(0.5);
+}
+
+.hero-content {
+    z-index: 10;
+    position: relative;
+    padding-top: 10vh;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    color: #dddadd;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: #e9dde9; /* zachte perzik */
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-btn {
+    background-color: #f7327a; /* vurige koraal */
+    color: #fff;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.cta-btn:hover {
+    background-color: #e51863; /* fris mintgroen */
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Over Ons Styling */
+.about {
+    background-color: #1e1e1e;
+    padding: 6rem 0;
+    text-align: center;
+    color: #050505;
+}
+
+.about h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffffb6;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about p:last-child {
+    font-weight: bold;
+    color: #f7327a;
+}
+
+/* Functionaliteiten Sectie */
+.features {
+    background-color: #ffffff;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #000000c2;
+}
+
+.features .section-description {
+    font-size: 1.2rem;
+    color: #303030a9;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.feature-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.feature-item {
+    padding: 2.5rem 1.5rem;
+    background-color: #00000013; /* mintgroen */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.feature-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover .feature-img {
+    transform: scale(1.05);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #c734348a, #333333);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 20px;
+    margin: 4rem auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cta-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.cta-section .cta-btn {
+    background-color: #c734343f;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.cta-section .cta-btn:hover {
+    background-color: #c734348a;
+    color: #ff4e51d0;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+/* Ze Hebben Ons Vertrouwd Sectie */
+.trusted {
+    background-color: #1e1e1e;
+    padding: 5rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.trusted h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ffffffe1;
+}
+
+.logo-slider {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    animation: slide 25s linear infinite;
+    padding: 0 2rem;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    width: 150px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.logo-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-item:hover {
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsieve Styling */
+@media (max-width: 1024px) {
+    .feature-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .cta-section {
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-items {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-section h2 {
+        font-size: 2.5rem;
+    }
+}

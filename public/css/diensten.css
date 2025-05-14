@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.vecht-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #f76b8a;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.vecht-subtitle {
+    font-size: 20px;
+    color: #ddd;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;  /* Volledige hoogte van het scherm */
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;  /* Zorgt ervoor dat de video achter de tekst komt */
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #f76b8a; /* Kleur die je eerder hebt gekozen */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #f76b8a;
+    border: 2px solid #f76b8a;
+    box-shadow: 0 0 15px rgba(247, 107, 138, 0.7);
+}
+
+.diensten-overview {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 50px 20px;
+}
+
+.diensten-overview h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+    color: #f76b8a; /* Kleur die je eerder hebt gekozen */
+    letter-spacing: 2px;
+}
+
+.diensten-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #111;
+}
+
+.dienst-card {
+    background: linear-gradient(145deg, #1c1c1c, #111);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dienst-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(247, 107, 138, 0.7);
+}
+
+.dienst-card .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #f76b8a; /* Kleur die je eerder hebt gekozen */
+}
+
+.dienst-card h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.dienst-card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.call-to-action {
+    background: linear-gradient(to right, #f76b8a, #d95068);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.call-to-action h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.call-to-action .btn-primary {
+    background-color: #fff;
+    color: #f76b8a; /* Kleur die je eerder hebt gekozen */
+    border: 2px solid #fff;
+}
+
+.call-to-action .btn-primary:hover {
+    background-color: #f76b8a;
+    color: #fff;
+    border: 2px solid #fff;
+}
